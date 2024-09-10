@@ -9,19 +9,24 @@ body {
 
 /* 头部样式 */
 header {
-    background-color: #4CAF50;
+    background-color: #3b78eb;
     padding: 20px;
     text-align: center;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -32,20 +37,18 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 /* 内容区域 */
 section {
-    padding: 20px;
+    padding: 40px 20px;
     margin: 10px 0;
-}
-
-#home {
     background-color: #fff;
-}
-
-#about, #contact, #more {
-    background-color: #eee;
+    border-radius: 5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* 页脚样式 */
