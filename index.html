@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栋某の小站</title>
+    <style>
+        /* CSS 样式部分 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-  <head>
-      <meta charset="utf-8">
-      <title>栋某の小站</title>
-  </head>
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-  <body>
-      test
-  </body>
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
 
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a.github {
+            background-color: #333;
+        }
+
+        a.github:hover {
+            background-color: #555;
+        }
+
+        a.bilibili {
+            background-color: #00A1D6;
+        }
+
+        a.bilibili:hover {
+            background-color: #0091C6;
+        }
+
+        /* 添加鼠标悬停时的小动画 */
+        a:hover {
+            transform: scale(1.05);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            a {
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到我的网站！</h1>
+        <p>我是一个喜欢编程和创作的小伙伴，欢迎访问我的社交平台！</p>
+        <a href="https://github.com/bengyedi" class="github" target="_blank">GitHub</a>
+        <a href="https://space.bilibili.com/3546384590441205" class="bilibili" target="_blank">Bilibili</a>
+    </div>
+
+    <script>
+        // JavaScript 部分，用于在控制台打印欢迎消息
+        console.log("欢迎访问我的个人网站！");
+    </script>
+</body>
 </html>
