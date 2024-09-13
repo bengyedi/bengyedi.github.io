@@ -177,11 +177,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .panel {
-        width: 100%;
-        padding: 20px;
-        border-right: none;
-    }
+    
 
     .avatar {
         width: 120px;
@@ -190,10 +186,6 @@ footer {
 
     .module {
         margin-bottom: 20px;
-    }
-
-    .links-box {
-        grid-template-columns: 1fr;
     }
 
     footer {
