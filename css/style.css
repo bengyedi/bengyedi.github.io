@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
@@ -180,7 +178,6 @@ footer {
     .avatar {
         width: 120px;
         height: 120px;
-        margin-top: 50%;
     }
 
     .module {
