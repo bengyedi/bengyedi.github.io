@@ -167,9 +167,9 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         height: auto;
-        margin-top: 450px; /* 调整与时间盒子之间的距离 */
+        margin-top: 70%; /* 调整与时间盒子之间的距离 */
         margin-bottom: 0;
     }
 
@@ -194,7 +194,7 @@ footer {
 
     footer {
         font-size: 0.75em;
-        padding: 15px 0;
+        padding: 5px 0;
         margin-bottom: 0;
     }
 }
