@@ -173,7 +173,7 @@ footer {
         flex-direction: column;
         width: 90%;
         height: auto;
-        margin-top: 70%; /* 调整与时间盒子之间的距离 */
+        margin-top: 400px; /* 调整与时间盒子之间的距离 */
         margin-bottom: 0;
     }
 
