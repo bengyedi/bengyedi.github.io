@@ -1,8 +1,8 @@
 {
-    "title": "Auroraの主页",
+    "title": "bengyediの主页",
     "description": "一个默默无闻的主页",
-    "keywords": "Aurora,个人主页",
-    "author": "Aurora",
+    "keywords": "bengyedi,个人主页",
+    "author": "bengyedi",
     "logo_img": "./img/icon/avatar.jpg",
     "logo_text_1": "wuhobin",
     "logo_text_2": "top",
@@ -41,6 +41,6 @@
         "fa-solid fa-flask",
         "敬请期待..."
     ],
-    "Copyright_text": "Aurora",
+    "Copyright_text": "bengyedi",
     "beian": "鄂ICP备20006685号"
 }
