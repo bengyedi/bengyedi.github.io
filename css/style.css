@@ -174,7 +174,9 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        /* 在小屏幕上堆叠显示 */
+        /* 在小屏幕上垂直堆叠 */
+        height: auto;
+        /* 自适应高度 */
     }
 
     .left-panel,
@@ -182,11 +184,13 @@ footer {
         padding: 15px;
         border-right: none;
         /* 移除右侧边框 */
+        border-bottom: 1px solid #eee;
+        /* 在小屏幕上添加底边框 */
     }
 
     .left-panel {
-        border-bottom: 1px solid #eee;
-        /* 在小屏幕上显示底部边框 */
+        border-bottom: none;
+        /* 避免重复边框 */
     }
 
     .links-box {
