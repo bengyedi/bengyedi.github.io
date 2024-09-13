@@ -33,15 +33,17 @@ body {
 
 .container {
     display: flex;
+    flex-direction: row;
+    /* 默认情况下左右排列 */
     width: 85%;
     height: calc(85% - 60px);
+    /* 留出 footer 的高度 */
     background-color: #fff;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
     margin-top: 70px;
     margin-bottom: 60px;
-    flex-direction: row;
 }
 
 .left-panel,
@@ -172,15 +174,24 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        /* 在小屏幕上堆叠显示 */
     }
 
     .left-panel,
     .right-panel {
         padding: 15px;
+        border-right: none;
+        /* 移除右侧边框 */
+    }
+
+    .left-panel {
+        border-bottom: 1px solid #eee;
+        /* 在小屏幕上显示底部边框 */
     }
 
     .links-box {
         grid-template-columns: 1fr;
+        /* 每行一个列 */
     }
 
     .time {
