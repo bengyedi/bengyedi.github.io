@@ -14,6 +14,28 @@ body {
     color: #333;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    height: calc(85% - 60px);
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.panel {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 时间盒子 */
 .time-box {
     background-color: #e6f7ff;
     padding: 15px;
@@ -31,39 +53,7 @@ body {
     margin: 0;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    /* 默认情况下左右排列 */
-    width: 85%;
-    height: calc(85% - 60px);
-    /* 留出 footer 的高度 */
-    background-color: #fff;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    overflow: hidden;
-    margin-top: 70px;
-    margin-bottom: 60px;
-}
-
-.left-panel,
-.right-panel {
-    flex: 1;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.left-panel {
-    background-color: #fafafa;
-    border-right: 1px solid #eee;
-}
-
-.right-panel {
-    justify-content: space-between;
-}
-
+/* 模块样式 */
 .module {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -78,13 +68,12 @@ body {
     transform: translateY(-5px);
 }
 
+/* 头像样式 */
 .avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     border: 4px solid #007bff;
-    max-width: 100%;
-    height: auto;
 }
 
 .info-box p {
@@ -102,11 +91,13 @@ body {
     border-radius: 8px;
 }
 
+/* 欢迎文本 */
 .welcome-box h2 {
     font-size: 1.8em;
     color: #007bff;
 }
 
+/* 链接盒子 */
 .links-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -129,6 +120,7 @@ body {
     background-color: #0056b3;
 }
 
+/* 名言盒子 */
 .quote-box {
     background-color: #f0f8ff;
     padding: 20px;
@@ -158,6 +150,7 @@ body {
     background-color: #0056b3;
 }
 
+/* footer 样式 */
 footer {
     position: fixed;
     bottom: 0;
@@ -174,35 +167,33 @@ footer {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        /* 在小屏幕上垂直堆叠 */
+        width: 100%;
         height: auto;
-        /* 自适应高度 */
+        margin-top: 20px;
+        margin-bottom: 0;
     }
 
-    .left-panel,
-    .right-panel {
-        padding: 15px;
+    .panel {
+        width: 100%;
+        padding: 20px;
         border-right: none;
-        /* 移除右侧边框 */
-        border-bottom: 1px solid #eee;
-        /* 在小屏幕上添加底边框 */
     }
 
-    .left-panel {
-        border-bottom: none;
-        /* 避免重复边框 */
-    }
-
-    .links-box {
-        grid-template-columns: 1fr;
-        /* 每行一个列 */
-    }
-
-    .time {
-        font-size: 1.2em;
+    .avatar {
+        width: 120px;
+        height: 120px;
     }
 
     .module {
         margin-bottom: 20px;
+    }
+
+    .links-box {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 0.75em;
+        padding: 15px 0;
     }
 }
