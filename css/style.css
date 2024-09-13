@@ -177,11 +177,10 @@ footer {
         margin-bottom: 0;
     }
 
-    
-
     .avatar {
         width: 120px;
         height: 120px;
+        margin-top: 50%;
     }
 
     .module {
