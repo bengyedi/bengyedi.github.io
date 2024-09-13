@@ -14,6 +14,24 @@ body {
     color: #333;
 }
 
+.time-box {
+    background-color: #e6f7ff;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 60px; /* 增加时间盒子与下面内容的距离 */
+}
+
+.time {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +41,7 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 90px; /* 增加顶部外边距以避免被时间盒子覆盖 */
     margin-bottom: 60px;
 }
 
@@ -33,24 +51,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-/* 时间盒子 */
-.time-box {
-    background-color: #e6f7ff;
-    padding: 15px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.time {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #007bff;
-    margin: 0;
 }
 
 /* 模块样式 */
@@ -169,7 +169,7 @@ footer {
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-top: 20px;
+        margin-top: 80px; /* 调整与时间盒子之间的距离 */
         margin-bottom: 0;
     }
 
